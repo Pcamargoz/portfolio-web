@@ -4,58 +4,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Pedro C. C. dos Santos</title>
+
+  <!-- Google Font profissional -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilo -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS - Animate On Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JavaScript customizado -->
   <script src="script.js" defer></script>
 </head>
 <body>
+
   <header>
-    <h1>Olá, eu sou o Pedro 👋</h1>
-    <p class="tagline">Backend Java • Inovação Sustentável • Líder nato</p>
-    <a href="#contato" class="cta-button">Entre em Contato</a>
+    <h1>Olá, sou Pedro 👋</h1>
+    <p class="tagline">Java Backend Developer | Projetos Sustentáveis | Liderança em Ação</p>
+    <a href="#contato" class="cta-button">Vamos conversar</a>
   </header>
 
-  <section id="sobre">
-    <h2>Quem sou eu</h2>
-    <p>Estudante de ADS na Facens, apaixonado por soluções que transformam o mundo com tecnologia. Desenvolvo sistemas com propósito, aplico liderança para gerar impacto real e estou em busca de desafios que me levem além.</p>
+  <section id="sobre" data-aos="fade-up">
+    <h2>Sobre Mim</h2>
+    <p>Estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Facens (representante de turma de mais de 1.200 alunos), líder de projetos acadêmicos em sustentabilidade e smart cities. Experiência em logística pública (abastecimento de UBS em Sorocaba), com ênfase em organização, emissão de notas fiscais, conferência e otimização de processos. Mais de 100 certificações na plataforma DIO e bootcamps selecionados (Java backend e frontend), além de cursos em NIppo e SENAI (informática avançada, cloud, blockchain, empreendedorismo). Ambicioso e focado em backend Java e tecnologias correlatas, com rápida assimilação de novas ferramentas, visão analítica e objetivo de gerar impacto em projetos nacionais e internacionais.</p>
   </section>
 
-  <section id="projetos">
+  <section id="projetos" data-aos="fade-up">
     <h2>Projetos</h2>
     <div class="projeto-card">
-      <h3>Coleta Inteligente de Resíduos</h3>
-      <p>Hardware com sensores e alertas automáticos para monitoramento de lixeiras públicas. Interface web e dados para predições. <a href="https://github.com/Pcamargoz" target="_blank">Ver no GitHub</a></p>
+      <h3>Representante de Turma – Facens</h3>
+      <p>Organizo reuniões, workshops e hackathons com foco em temas atuais do mercado, representando mais de 1.200 estudantes em demandas acadêmicas e estratégicas.</p>
+    </div>
+    <div class="projeto-card">
+      <h3>Projeto de Coleta Inteligente de Resíduos</h3>
+      <p>Desenvolvimento completo de sistema IoT para monitoramento de lixeiras públicas utilizando Arduino UNO, sensores ultrassônicos HC-SR04, e alertas visuais (LED) e digitais. Simulações via Tinkercad, interface de visualização e lógica de backend para envio de alertas ao centro de coleta. Versionado com Git/GitHub, gestão com Trello, e foco total em impacto ambiental e eficiência urbana. <a href="https://github.com/Pcamargoz" target="_blank">Repositório</a> | <a href="https://pcamargoz.github.io/Website-linksupx/" target="_blank">Visualizar projeto</a></p>
     </div>
   </section>
 
-  <section id="experiencia">
-    <h2>Experiência e Formação</h2>
+  <section id="experiencia" data-aos="fade-up">
+    <h2>Experiência Profissional</h2>
+    <p><strong>Auxiliar de Logística – CAF / Human Concierge</strong> <br>Março 2025 – Atual | Sorocaba, SP</p>
     <ul>
-      <li><strong>CAF / Human Concierge</strong> – Logística para UBS • Excel • Proatividade</li>
-      <li><strong>FACENS</strong> – ADS • Representante de turma • Projetos acadêmicos</li>
+      <li>Responsável pelo abastecimento de UBSs, conferência de estoque, emissão de notas fiscais e relatórios de consumo.</li>
+      <li>Elaboração de indicadores com Excel avançado.</li>
+      <li>Exploração ativa de automatização e TI para melhoria de processos logísticos.</li>
     </ul>
   </section>
 
-  <section id="skills">
-    <h2>Habilidades Técnicas</h2>
-    <ul class="skills-grid">
-      <li>Java • Spring Boot</li>
-      <li>APIs REST</li>
-      <li>Git & GitHub</li>
-      <li>SQL • PostgreSQL</li>
-      <li>HTML • CSS • JS</li>
-      <li>Arduino • Tinkercad</li>
+  <section id="formacao" data-aos="fade-up">
+    <h2>Formação Acadêmica</h2>
+    <p><strong>Centro Universitário Facens – Análise e Desenvolvimento de Sistemas</strong><br>2025 – 06/2027</p>
+    <ul>
+      <li>Representante de turma de mais de 1.200 alunos</li>
     </ul>
   </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
+  <section id="cursos" data-aos="fade-up">
+    <h2>Cursos & Certificações</h2>
+    <ul>
+      <li>DIO: +100 cursos completos (Java backend, frontend, microsserviços, DevOps, testes e cloud)</li>
+      <li>Santander Bootcamps (com bolsa): Backend com Java, Frontend com integração</li>
+      <li>SENAI: Implantação em Nuvens, Blockchain, Empreendedorismo</li>
+      <li>Nippo: Informática Avançada, Inglês Básico (leitura e conversação)</li>
+    </ul>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Competências Técnicas</h2>
+    <div class="skills-grid">
+      <span>Java (Core, Spring Boot)</span>
+      <span>APIs REST</span>
+      <span>Python (noções)</span>
+      <span>Git & GitHub</span>
+      <span>SQL • PostgreSQL • NoSQL</span>
+      <span>HTML • CSS • JavaScript</span>
+      <span>Arduino • Tinkercad</span>
+      <span>Docker • Kubernetes (básico)</span>
+      <span>Excel avançado</span>
+      <span>Scrum/Kanban (Trello, Jira)</span>
+    </div>
+  </section>
+
+  <section id="softskills" data-aos="fade-up">
+    <h2>Competências Comportamentais</h2>
+    <ul>
+      <li>Liderança e representatividade ativa com mais de 1.200 alunos</li>
+      <li>Aprendizagem rápida e foco em evolução constante</li>
+      <li>Clareza na comunicação e trabalho em equipe</li>
+      <li>Gestão de tempo eficiente entre estudos, trabalho e projetos</li>
+    </ul>
+  </section>
+
+  <section id="idiomas" data-aos="fade-up">
+    <h2>Idiomas</h2>
+    <ul>
+      <li><strong>Português:</strong> Nativo</li>
+      <li><strong>Inglês:</strong> Básico-intermediário (leitura técnica, conversação funcional)</li>
+    </ul>
+  </section>
+
+  <section id="extras" data-aos="fade-up">
+    <h2>Informações Adicionais</h2>
+    <ul>
+      <li><strong>Disponibilidade:</strong> Estágio ou vaga júnior (tarde e noite)</li>
+      <li><strong>Local:</strong> Sorocaba, SP • Aberto a remoto e internacional</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/Pcamargoz" target="_blank">Repositórios</a></li>
+      <li><strong>Projeto em destaque:</strong> <a href="https://pcamargoz.github.io/Website-linksupx/" target="_blank">Coleta Inteligente</a></li>
+      <li><strong>DIO Perfil:</strong> <a href="https://www.dio.me/users/pedro01cesarsanto" target="_blank">Acesse aqui</a></li>
+    </ul>
+  </section>
+
+  <section id="contato" data-aos="fade-up">
+    <h2>Vamos conversar?</h2>
     <p><strong>Email:</strong> pedro01cesarsanto@gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedro-carmargo01" target="_blank">Perfil</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Pcamargoz" target="_blank">Repositórios</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedro-carmargo01" target="_blank">Perfil Profissional</a></p>
+    <p><strong>WhatsApp:</strong> (15) 98807-9571</p>
   </section>
 
   <footer>
-    <p>Desenvolvido com ❤️ por Pedro C. C. dos Santos © 2025</p>
+    <p>Desenvolvido por Pedro C. C. dos Santos © 2025</p>
   </footer>
+
+  <!-- Inicializa AOS.js -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
