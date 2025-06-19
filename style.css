@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #1f4068;
+  animation: slide-in 1s ease-out;
+}
+
+.cta-button {
+  background: #ff4b2b;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-grid li {
+  background: #1b1b2f;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.skills-grid li:hover {
+  background: #e43f5a;
+}
+
+footer {
+  text-align: center;
+  background: #1f4068;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Animação suave */
+@keyframes slide-in {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

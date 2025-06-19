@@ -1,111 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Profissional - Pedro César Camargo dos Santos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
-    body { background:#0f172a; color:#e2e8f0; line-height:1.6; }
-    nav.navbar { background:#1e293b; padding:1rem; position:sticky; top:0; z-index:100; box-shadow:0 2px 8px rgba(0,0,0,0.5); }
-    nav.navbar ul { display:flex; justify-content:center; list-style:none; gap:2rem; }
-    nav.navbar a { color:#cbd5e1; text-decoration:none; font-weight:500; transition:color .3s; }
-    nav.navbar a:hover { color:#38bdf8; }
-    .hero { background:linear-gradient(135deg, #0ea5e9, #3b82f6); color:#fff; text-align:center; padding:6rem 1rem; }
-    .hero h1 { font-size:3rem; margin-bottom:.5rem; }
-    .hero p { font-size:1.2rem; margin-bottom:1rem; }
-    section { padding:4rem 1rem; max-width:1100px; margin:0 auto; }
-    section h2 { text-align:center; font-size:2rem; margin-bottom:2rem; position:relative; color:#38bdf8; }
-    .skills-grid, .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
-    .card { background:#1e293b; border-radius:8px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition:transform .3s; }
-    .card:hover { transform:translateY(-8px); }
-    .card h3 { color:#60a5fa; margin-bottom:.75rem; }
-    .timeline { position:relative; list-style:none; padding-left:0; margin:2rem 0; }
-    .timeline::before { content:''; position:absolute; left:50%; top:0; transform:translateX(-50%); width:4px; height:100%; background:#475569; }
-    .timeline li { position:relative; width:50%; padding:1rem 2rem; }
-    .timeline li:nth-child(odd) { left:0; text-align:right; }
-    .timeline li:nth-child(even) { left:50%; }
-    .timeline li::before { content:''; position:absolute; top:1.2rem; width:12px; height:12px; background:#38bdf8; border-radius:50%; border:2px solid #1e293b; }
-    .social-links { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
-    .social-links a { background:#38bdf8; color:#0f172a; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-weight:600; transition:background .3s; }
-    .social-links a:hover { background:#0ea5e9; color:#fff; }
-    footer { text-align:center; padding:2rem 1rem; background:#1e293b; color:#cbd5e1; margin-top:2rem; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Pedro C. C. dos Santos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <nav class="navbar" data-aos="fade-down">
+  <header>
+    <h1>Olá, eu sou o Pedro 👋</h1>
+    <p class="tagline">Backend Java • Inovação Sustentável • Líder nato</p>
+    <a href="#contato" class="cta-button">Entre em Contato</a>
+  </header>
+
+  <section id="sobre">
+    <h2>Quem sou eu</h2>
+    <p>Estudante de ADS na Facens, apaixonado por soluções que transformam o mundo com tecnologia. Desenvolvo sistemas com propósito, aplico liderança para gerar impacto real e estou em busca de desafios que me levem além.</p>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projeto-card">
+      <h3>Coleta Inteligente de Resíduos</h3>
+      <p>Hardware com sensores e alertas automáticos para monitoramento de lixeiras públicas. Interface web e dados para predições. <a href="https://github.com/Pcamargoz" target="_blank">Ver no GitHub</a></p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência e Formação</h2>
     <ul>
-      <li><a href="#home">Início</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">Sobre Mim</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#contact">Contato</a></li>
+      <li><strong>CAF / Human Concierge</strong> – Logística para UBS • Excel • Proatividade</li>
+      <li><strong>FACENS</strong> – ADS • Representante de turma • Projetos acadêmicos</li>
     </ul>
-  </nav>
-
-  <section id="home" class="hero" data-aos="fade-up">
-    <h1>Pedro César Camargo dos Santos</h1>
-    <p>18 anos | Estudante de Análise e Desenvolvimento de Sistemas | Backend Java | Cloud Native | Dev Full Stack em formação</p>
-    <p>Buscando oportunidades para atuar como desenvolvedor de software e crescer na carreira internacional de TI.</p>
   </section>
 
-  <section id="skills" data-aos="fade-up">
-    <h2>Minhas Habilidades</h2>
-    <div class="skills-grid">
-      <div class="card"><h3>Java e Spring</h3><p>Java 11+, Spring Boot, Spring Data, Spring Security, Microsserviços, API REST.</p></div>
-      <div class="card"><h3>DevOps e Cloud</h3><p>Docker, Kubernetes, CI/CD, GitHub Actions, Jenkins.</p></div>
-      <div class="card"><h3>Qualidade de Código</h3><p>Clean Code, SOLID, Testes com JUnit e Mockito.</p></div>
-      <div class="card"><h3>Frontend Básico</h3><p>HTML, CSS, JavaScript, React (em aprendizado).</p></div>
-      <div class="card"><h3>Python</h3><p>Scripts, automação, pequenos projetos de IA.</p></div>
-      <div class="card"><h3>Versionamento</h3><p>Git, GitHub, Git Flow, Pull Requests, Code Review.</p></div>
-    </div>
-  </section>
-
-  <section id="about" data-aos="fade-up">
-    <h2>Minha Jornada</h2>
-    <ul class="timeline">
-      <li>2024: Início no curso de Análise e Desenvolvimento de Sistemas (Facens - Sorocaba/SP)</li>
-      <li>2024: Curso "Java Cloud Native" pela DIO PRO</li>
-      <li>2024: Auxiliar de Logística na CAF, parceria com Human Concierge</li>
-      <li>2024: Curso de qualificação em Turismo pelo SENAC</li>
-      <li>2024: Projetos pessoais com foco em backend Java, microsserviços e Python</li>
-      <li>2025: Buscando oportunidades de estágio na área de desenvolvimento</li>
+  <section id="skills">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="skills-grid">
+      <li>Java • Spring Boot</li>
+      <li>APIs REST</li>
+      <li>Git & GitHub</li>
+      <li>SQL • PostgreSQL</li>
+      <li>HTML • CSS • JS</li>
+      <li>Arduino • Tinkercad</li>
     </ul>
-    <p>Objetivo: Atuar como desenvolvedor backend e evoluir para full stack, com foco em projetos internacionais e cloud computing.</p>
   </section>
 
-  <section id="projects" data-aos="fade-up">
-    <h2>Projetos Recentes</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <h3>Desafio Banco Dio</h3>
-        <p>Simulação de operações bancárias utilizando Java e princípios de orientação a objetos.</p>
-        <a href="https://github.com/Pcamargoz/Desafio-Banco-Dio" target="_blank">Ver no GitHub</a>
-      </div>
-      <div class="card">
-        <h3>iPhone Java</h3>
-        <p>Interface simulada de um iPhone usando Java Swing, explorando padrões de design.</p>
-        <a href="https://github.com/Pcamargoz/Iphone-Java" target="_blank">Ver no GitHub</a>
-      </div>
-    </div>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Email:</strong> pedro01cesarsanto@gmail.com</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedro-carmargo01" target="_blank">Perfil</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Pcamargoz" target="_blank">Repositórios</a></p>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Vamos Conversar?</h2>
-    <p>Aberto a estágios, freelas e oportunidades para atuar em desenvolvimento backend, cloud e projetos full stack.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Pcamargoz" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Pedro César Camargo dos Santos | Todos os direitos reservados.</p>
+  <footer>
+    <p>Desenvolvido com ❤️ por Pedro C. C. dos Santos © 2025</p>
   </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
