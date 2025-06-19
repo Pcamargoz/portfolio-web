@@ -3,115 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Pedro César Camargo dos Santos</title>
-  <!-- Google Fonts & AOS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Portfólio Profissional - Pedro César Camargo dos Santos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
-    body { background:#f4f4f9; color:#333; line-height:1.6; }
-    nav.navbar { background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100; }
-    nav.navbar ul { display:flex; justify-content:center; list-style:none; padding:1rem; }
-    nav.navbar li { margin:0 1rem; }
-    nav.navbar a { text-decoration:none; color:#555; font-weight:500; transition:color .3s; }
-    nav.navbar a:hover { color:#0077cc; }
-    .hero { background:#0077cc; color:#fff; padding:6rem 1rem; text-align:center; }
-    .hero h1 { font-size:2.4rem; margin-bottom:.5rem; }
-    .hero p { margin-bottom:.5rem; }
-    section { padding:4rem 1rem; }
-    section.section-gray { background:#fff; }
-    section.section-dark { background:#333; color:#eee; }
-    section h2 { text-align:center; font-size:1.8rem; margin-bottom:2rem; position:relative; }
-    section h2::after { content:''; width:50px; height:3px; background:#0077cc; display:block; margin:0.5rem auto 0; }
-    .skills-grid, .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem; max-width:1000px; margin:0 auto; }
-    .skill-card, .project-card { background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform .3s; }
-    .skill-card:hover, .project-card:hover { transform:translateY(-5px); }
-    .skill-card h3, .project-card h3 { margin-bottom:.75rem; color:#0077cc; }
-    .timeline { max-width:600px; margin:0 auto 2rem; list-style:none; position:relative; }
-    .timeline::before { content:''; position:absolute; left:50%; transform:translateX(-50%); width:4px; height:100%; background:#ddd; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+    body { background:#0f172a; color:#e2e8f0; line-height:1.6; }
+    nav.navbar { background:#1e293b; padding:1rem; position:sticky; top:0; z-index:100; box-shadow:0 2px 8px rgba(0,0,0,0.5); }
+    nav.navbar ul { display:flex; justify-content:center; list-style:none; gap:2rem; }
+    nav.navbar a { color:#cbd5e1; text-decoration:none; font-weight:500; transition:color .3s; }
+    nav.navbar a:hover { color:#38bdf8; }
+    .hero { background:linear-gradient(135deg, #0ea5e9, #3b82f6); color:#fff; text-align:center; padding:6rem 1rem; }
+    .hero h1 { font-size:3rem; margin-bottom:.5rem; }
+    .hero p { font-size:1.2rem; margin-bottom:1rem; }
+    section { padding:4rem 1rem; max-width:1100px; margin:0 auto; }
+    section h2 { text-align:center; font-size:2rem; margin-bottom:2rem; position:relative; color:#38bdf8; }
+    .skills-grid, .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .card { background:#1e293b; border-radius:8px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition:transform .3s; }
+    .card:hover { transform:translateY(-8px); }
+    .card h3 { color:#60a5fa; margin-bottom:.75rem; }
+    .timeline { position:relative; list-style:none; padding-left:0; margin:2rem 0; }
+    .timeline::before { content:''; position:absolute; left:50%; top:0; transform:translateX(-50%); width:4px; height:100%; background:#475569; }
     .timeline li { position:relative; width:50%; padding:1rem 2rem; }
     .timeline li:nth-child(odd) { left:0; text-align:right; }
     .timeline li:nth-child(even) { left:50%; }
-    .timeline li::before { content:''; position:absolute; top:1.2rem; width:12px; height:12px; background:#0077cc; border-radius:50%; border:2px solid #fff; }
-    .timeline li:nth-child(odd)::before { right:-7px; }
-    .timeline li:nth-child(even)::before { left:-7px; }
-    .social-links { display:flex; justify-content:center; gap:1rem; }
-    .social-links a { text-decoration:none; color:#fff; background:#0077cc; padding:0.5rem 1rem; border-radius:4px; transition:background .3s; }
-    .social-links a:hover { background:#005fa3; }
-    footer.footer { text-align:center; padding:2rem 1rem; background:#222; color:#ccc; }
+    .timeline li::before { content:''; position:absolute; top:1.2rem; width:12px; height:12px; background:#38bdf8; border-radius:50%; border:2px solid #1e293b; }
+    .social-links { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
+    .social-links a { background:#38bdf8; color:#0f172a; padding:0.5rem 1rem; border-radius:4px; text-decoration:none; font-weight:600; transition:background .3s; }
+    .social-links a:hover { background:#0ea5e9; color:#fff; }
+    footer { text-align:center; padding:2rem 1rem; background:#1e293b; color:#cbd5e1; margin-top:2rem; }
   </style>
 </head>
 <body>
-  <!-- Navegação -->
   <nav class="navbar" data-aos="fade-down">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home">Início</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">Sobre</a></li>
+      <li><a href="#about">Sobre Mim</a></li>
       <li><a href="#projects">Projetos</a></li>
       <li><a href="#contact">Contato</a></li>
     </ul>
   </nav>
 
-  <!-- Seção Home -->
-  <section id="home" class="hero" data-aos="zoom-in">
-    <h1>🚀 Olá, eu sou Pedro César Camargo dos Santos</h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas (18 anos) | Especialista em Java Cloud Native</p>
-    <p>Desenvolvendo soluções backend escaláveis com Spring Boot, microsserviços e conteinerização.</p>
+  <section id="home" class="hero" data-aos="fade-up">
+    <h1>Pedro César Camargo dos Santos</h1>
+    <p>18 anos | Estudante de Análise e Desenvolvimento de Sistemas | Backend Java | Cloud Native | Dev Full Stack em formação</p>
+    <p>Buscando oportunidades para atuar como desenvolvedor de software e crescer na carreira internacional de TI.</p>
   </section>
 
-  <!-- Seção Skills -->
-  <section id="skills" class="section-gray" data-aos="fade-up">
-    <h2>🛠️ Skills & Ferramentas</h2>
+  <section id="skills" data-aos="fade-up">
+    <h2>Minhas Habilidades</h2>
     <div class="skills-grid">
-      <div class="skill-card"><h3>Java & Ecossistema</h3><p>Java 11+, Spring Boot, Spring Data, Spring Security</p></div>
-      <div class="skill-card"><h3>Infra & DevOps</h3><p>Microsserviços, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins)</p></div>
-      <div class="skill-card"><h3>Especialista em Backend</h3><p>APIs RESTful, Microsserviços em Spring Boot, Conteinerização com Docker e Kubernetes</p></div>
-      <div class="skill-card"><h3>Qualidade</h3><p>JUnit, Mockito, Clean Code, SOLID</p></div>
-      <div class="skill-card"><h3>Versionamento</h3><p>Git, GitHub, Git Flow, Code Reviews</p></div>
-      <div class="skill-card"><h3>Python</h3><p>Automação, prototipagem, scripts e data science</p></div>
+      <div class="card"><h3>Java e Spring</h3><p>Java 11+, Spring Boot, Spring Data, Spring Security, Microsserviços, API REST.</p></div>
+      <div class="card"><h3>DevOps e Cloud</h3><p>Docker, Kubernetes, CI/CD, GitHub Actions, Jenkins.</p></div>
+      <div class="card"><h3>Qualidade de Código</h3><p>Clean Code, SOLID, Testes com JUnit e Mockito.</p></div>
+      <div class="card"><h3>Frontend Básico</h3><p>HTML, CSS, JavaScript, React (em aprendizado).</p></div>
+      <div class="card"><h3>Python</h3><p>Scripts, automação, pequenos projetos de IA.</p></div>
+      <div class="card"><h3>Versionamento</h3><p>Git, GitHub, Git Flow, Pull Requests, Code Review.</p></div>
     </div>
   </section>
 
-  <!-- Seção Sobre -->
-  <section id="about" class="section-dark" data-aos="fade-up">
-    <h2>🎓 Formação & Experiência</h2>
+  <section id="about" data-aos="fade-up">
+    <h2>Minha Jornada</h2>
     <ul class="timeline">
-      <li>2024: Início do curso de Análise e Desenvolvimento de Sistemas</li>
-      <li>2024: Curso "Java Cloud Native" (DIO PRO)</li>
-      <li>2024: Auxiliar de Logística na CAF (Human Concierge)</li>
-      <li>2024: Qualificação em Turismo (SENAC)</li>
-      <li>2024: Projetos pessoais em Python e estudos via Mimo</li>
+      <li>2024: Início no curso de Análise e Desenvolvimento de Sistemas (Facens - Sorocaba/SP)</li>
+      <li>2024: Curso "Java Cloud Native" pela DIO PRO</li>
+      <li>2024: Auxiliar de Logística na CAF, parceria com Human Concierge</li>
+      <li>2024: Curso de qualificação em Turismo pelo SENAC</li>
+      <li>2024: Projetos pessoais com foco em backend Java, microsserviços e Python</li>
+      <li>2025: Buscando oportunidades de estágio na área de desenvolvimento</li>
     </ul>
-    <p>Objetivo: Tornar-me desenvolvedor full-stack, unindo backend em Java com interfaces web intuitivas.</p>
+    <p>Objetivo: Atuar como desenvolvedor backend e evoluir para full stack, com foco em projetos internacionais e cloud computing.</p>
   </section>
 
-  <!-- Seção Projetos -->
-  <section id="projects" class="section-gray" data-aos="fade-up">
-    <h2>🚀 Projetos</h2>
+  <section id="projects" data-aos="fade-up">
+    <h2>Projetos Recentes</h2>
     <div class="projects-grid">
-      <div class="project-card"><h3>Desafio Banco Dio</h3><p>Implementação de funcionalidades bancárias em Java, abordando operações de conta e transações.</p><a href="https://github.com/Pcamargoz/Desafio-Banco-Dio" target="_blank">Ver no GitHub</a></div>
-      <div class="project-card"><h3>iPhone Java</h3><p>Simulação de interface de iPhone em Java, explorando Swing e padrões de design.</p><a href="https://github.com/Pcamargoz/Iphone-Java" target="_blank">Ver no GitHub</a></div>
+      <div class="card">
+        <h3>Desafio Banco Dio</h3>
+        <p>Simulação de operações bancárias utilizando Java e princípios de orientação a objetos.</p>
+        <a href="https://github.com/Pcamargoz/Desafio-Banco-Dio" target="_blank">Ver no GitHub</a>
+      </div>
+      <div class="card">
+        <h3>iPhone Java</h3>
+        <p>Interface simulada de um iPhone usando Java Swing, explorando padrões de design.</p>
+        <a href="https://github.com/Pcamargoz/Iphone-Java" target="_blank">Ver no GitHub</a>
+      </div>
     </div>
   </section>
 
-  <!-- Seção Contato -->
-  <section id="contact" class="section-dark" data-aos="fade-up">
-    <h2>🔗 Vamos Conectar?</h2>
-    <p>Estou aberto a estágios, freelas e colaborações. Vamos transformar ideias em soluções!</p>
+  <section id="contact" data-aos="fade-up">
+    <h2>Vamos Conversar?</h2>
+    <p>Aberto a estágios, freelas e oportunidades para atuar em desenvolvimento backend, cloud e projetos full stack.</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
       <a href="https://github.com/Pcamargoz" target="_blank">GitHub</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer" data-aos="fade-up">
-    <p>&copy; 2025 Pedro César Camargo dos Santos. Todos os direitos reservados.</p>
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Pedro César Camargo dos Santos | Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-  <script> AOS.init({ duration:800, once:true }); </script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
