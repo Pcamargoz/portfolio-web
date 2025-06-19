@@ -1,71 +1,80 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
 header {
   text-align: center;
-  padding: 5rem 2rem;
-  background: #1f4068;
-  animation: slide-in 1s ease-out;
+  padding: 4rem 1rem;
+  background: #1a1a2e;
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #08d9d6;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 25px #08d9d6;
+  object-fit: cover;
 }
 
 .cta-button {
-  background: #ff4b2b;
-  color: white;
-  padding: 1rem 2rem;
-  margin-top: 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
   font-weight: bold;
+  background-color: #ff2e63;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
 .cta-button:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px #ff2e63;
 }
 
 section {
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-}
-
-.skills-grid li {
-  background: #1b1b2f;
-  padding: 1rem 1.5rem;
+.projeto-img {
+  width: 100%;
+  max-width: 600px;
   border-radius: 10px;
-  transition: background 0.3s ease;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.skills-grid li:hover {
-  background: #e43f5a;
+.projeto-card {
+  background: #16213e;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(8, 217, 214, 0.1);
 }
 
 footer {
+  background: #1a1a2e;
   text-align: center;
-  background: #1f4068;
   padding: 2rem;
   font-size: 0.9rem;
+  color: #aaa;
 }
 
-/* Animação suave */
-@keyframes slide-in {
-  from {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+/* AOS Animations */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
 }
